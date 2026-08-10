@@ -18,6 +18,10 @@
     document.querySelectorAll("[data-lang]").forEach((button) => button.classList.toggle("active", button.dataset.lang === language));
     document.querySelectorAll(".privacy-link").forEach((link) => link.href = `privacy/?lang=${language}`);
     document.querySelectorAll(".home-link").forEach((link) => link.href = `../?lang=${language}`);
+    const phonePreview = document.querySelector("#phone-preview");
+    const tabletPreview = document.querySelector("#tablet-preview");
+    if (phonePreview) phonePreview.src = `assets/app-home-phone-${language}.png`;
+    if (tabletPreview) tabletPreview.src = `assets/app-home-tablet-${language}.png`;
     const sections = document.querySelector("#policy-sections");
     if (sections) {
       sections.replaceChildren(...copy.policySections.map(([title, body]) => {

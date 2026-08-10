@@ -7,6 +7,7 @@
 - `translations.js`: 한국어·영어·일본어 문구
 - `styles.css`: 공통 반응형 디자인
 - `app.js`: 언어 자동 선택과 전환
+- `assets/app-home-{phone,tablet}-{ko,en,ja}.png`: 언어별 실제 앱 화면
 
 GitHub Pages에는 이 폴더의 파일을 저장소 루트로 올리면 된다. `CNAME`은
 `sfp.hopalt.com`으로 설정되어 있다.
