@@ -1,0 +1,30 @@
+.language-picker {
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 22px;
+}
+
+@media (max-width: 800px) {
+  .site-header,
+  .policy-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .language-picker {
+    width: 100%;
+    max-width: none;
+  }
+
+  .hero-copy,
+  .policy-document,
+  .policy-document p,
+  .coming-soon {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .coming-soon {
+    display: flex;
+  }
+}
