@@ -35,13 +35,19 @@
     if (tabletPreview) tabletPreview.src = `assets/app-home-tablet-${["ko", "en", "ja"].includes(language) ? language : "en"}.png`;
     const sections = document.querySelector("#policy-sections");
     if (sections) {
-      sections.replaceChildren(...copy.policySections.map(([title, body]) => {
+      sections.replaceChildren(...copy.policySections.map(([title, body, policyLink]) => {
         const section = document.createElement("section");
         const heading = document.createElement("h2");
         const paragraph = document.createElement("p");
         heading.textContent = title;
         paragraph.textContent = body;
         section.append(heading, paragraph);
+        if (policyLink) {
+          const link = document.createElement("a");
+          link.href = policyLink.url;
+          link.textContent = policyLink.label;
+          section.append(link);
+        }
         return section;
       }));
     }
