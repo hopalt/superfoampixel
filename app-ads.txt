@@ -3,7 +3,7 @@
 kidoz.net, 15850, DIRECT, a109366414b7335e # Replace "1" with your Kidoz publisher ID
 
 # Required as per https://iabtechlab.com/wp-content/uploads/2020/12/CTV_app-ads_IABTechLab_Explainer_Guide_Public_Comment_2020-12.pdf
-# inventorypartnerdomain=kidoz.net # publishers should include this line with the leading # removed
+inventorypartnerdomain=kidoz.net # publishers should include this line with the leading # removed
 
 kidoz.net, 14260, RESELLER, a109366414b7335e
 kidoz.net, 15127, RESELLER, a109366414b7335e
